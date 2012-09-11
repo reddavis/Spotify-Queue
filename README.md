@@ -12,7 +12,11 @@ What makes it cool though, is that it is scriptable:
 
 ### Queue a Track
 
-<script src="https://gist.github.com/3702513.js?file=gistfile1.applescript"></script>
+```applescript
+tell application "Spotify Queue"
+  addTrack "spotify:track:3iPR2xFG7CTREJTNMSvw74"
+end tell
+```
 
 ### Play
 
