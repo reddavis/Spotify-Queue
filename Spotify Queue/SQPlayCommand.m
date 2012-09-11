@@ -7,7 +7,15 @@
 //
 
 #import "SQPlayCommand.h"
+#import "SQPlaybackManager.h"
+
 
 @implementation SQPlayCommand
+
+- (id)performDefaultImplementation {
+    
+    [[SQPlaybackManager sharedPlaybackManager] play];
+    return nil;
+}
 
 @end

@@ -7,28 +7,54 @@
 //
 
 #import "SQAddTrackWindowController.h"
+#import "SQPlaybackManager.h"
+
 
 @interface SQAddTrackWindowController ()
 
 @end
 
+
+NSString *const kSQAddTrackWindowControllerXibName = @"SQAddTrackWindowController";
+
+
 @implementation SQAddTrackWindowController
 
-- (id)initWithWindow:(NSWindow *)window
-{
+#pragma mark - Initialization
+
+- (id)initWithWindow:(NSWindow *)window {
+    
     self = [super initWithWindow:window];
     if (self) {
-        // Initialization code here.
+
     }
     
     return self;
 }
 
-- (void)windowDidLoad
-{
-    [super windowDidLoad];
+#pragma mark - Window Lifecycle
+
+- (void)windowDidLoad {
     
-    // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+    [super windowDidLoad];
+}
+
+#pragma mark - Actions
+
+- (void)addTrackButtonClicked:(id)sender {
+    
+    if (self.trackURLTextField.stringValue.length > 0) {
+        
+        NSURL *trackURL = [NSURL URLWithString:self.trackURLTextField.stringValue];
+        [[SQPlaybackManager sharedPlaybackManager] addTrackWithURL:trackURL];
+    }
+    
+    [self hidePanel:nil];
+}
+
+- (void)hidePanel:(id)sender {
+    
+	[[NSApplication sharedApplication] endSheet:self.window];
 }
 
 @end

@@ -7,15 +7,30 @@
 //
 
 #import "SQLoginWindowController.h"
+#import "SQUserPreferences.h"
+#import "SQConstants.h"
+
 
 @interface SQLoginWindowController ()
 
+@property (readonly, nonatomic) SPSession *spotifySession;
+@property (readonly, nonatomic) SQUserPreferences *userPreferences;
+
+- (void)showLoginForm;
+- (void)hideLoginForm;
+
 @end
+
+
+NSString *const kSQLoginWindowControllerXibName = @"SQLoginWindowController";
+
 
 @implementation SQLoginWindowController
 
-- (id)initWithWindow:(NSWindow *)window
-{
+#pragma mark - Initialization
+
+- (id)initWithWindow:(NSWindow *)window {
+    
     self = [super initWithWindow:window];
     if (self) {
         // Initialization code here.
@@ -24,11 +39,94 @@
     return self;
 }
 
-- (void)windowDidLoad
-{
-    [super windowDidLoad];
+#pragma mark - Window Lifecycle
+
+- (void)windowDidLoad {
     
-    // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+    [super windowDidLoad];
+}
+
+- (void)awakeFromNib {
+    
+    self.spotifySession.delegate = self;
+    
+    if (self.userPreferences.username && self.userPreferences.credential) {
+        
+        [self hideLoginForm];
+        [self.spotifySession attemptLoginWithUserName:self.userPreferences.username existingCredential:self.userPreferences.credential rememberCredentials:YES];
+    }
+}
+
+#pragma mark -
+
+- (void)showLoginForm {
+    
+    [self.largeSpinner stopAnimation:nil];
+    [self.usernameTextField setHidden:NO];
+    [self.passwordTextField setHidden:NO];
+    [self.loginButton setHidden:NO];
+}
+
+- (void)hideLoginForm {
+    
+    [self.usernameTextField setHidden:YES];
+    [self.passwordTextField setHidden:YES];
+    [self.loginButton setHidden:YES];
+    [self.largeSpinner startAnimation:nil];
+}
+
+#pragma mark - Actions
+
+- (void)loginButtonClicked:(id)sender {
+    
+    [self.loginButton setEnabled:NO];
+    [self.largeSpinner startAnimation:nil];
+    
+    NSString *username = self.usernameTextField.stringValue;
+    NSString *password = self.passwordTextField.stringValue;
+    [self.spotifySession attemptLoginWithUserName:username password:password rememberCredentials:YES];
+}
+
+#pragma mark - Helpers
+
+- (SPSession *)spotifySession {
+    
+    return [SPSession sharedSession];
+}
+
+- (SQUserPreferences *)userPreferences {
+    
+    return [SQUserPreferences sharedPreferences];
+}
+
+#pragma mark - SPSessionDelegate
+
+- (void)session:(SPSession *)aSession didFailToLoginWithError:(NSError *)error {
+    
+    NSAlert *alert = [NSAlert alertWithError:error];
+    [alert beginSheetModalForWindow:self.window modalDelegate:nil didEndSelector:nil contextInfo:nil];
+    
+    [self.largeSpinner stopAnimation:nil];
+    [self.loginButton setEnabled:YES];
+}
+
+- (void)session:(SPSession *)aSession didEncounterNetworkError:(NSError *)error {
+    
+    //..Show error label
+    [self showLoginForm];
+}
+
+- (void)session:(SPSession *)aSession didGenerateLoginCredentials:(NSString *)credential forUserName:(NSString *)userName {
+    
+    self.userPreferences.username = userName;
+    self.userPreferences.credential = credential;
+}
+
+- (void)sessionDidLoginSuccessfully:(SPSession *)aSession {
+    
+    if (self.userPreferences.username && self.userPreferences.credential) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:kLoggedInSuccessfulyNotification object:nil];
+    }
 }
 
 @end

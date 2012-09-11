@@ -9,6 +9,13 @@
             <cocoa class="SQAddTrackCommand"/>
             <direct-parameter type="text"/>
         </command>
-    
+        
+        <command name="pause" code="runPPase" description="Pause">
+            <cocoa class="SQPauseCommand"/>
+        </command>
+        
+        <command name="play" code="runPPlay" description="Play">
+            <cocoa class="SQPlayCommand"/>
+        </command>
     </suite>
 </dictionary>

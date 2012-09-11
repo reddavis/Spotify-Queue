@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface SQUserPreferences : NSObject
+
+@property (readwrite, nonatomic) NSString *username;
+@property (readwrite, nonatomic) NSString *credential;
+
++ (SQUserPreferences *)sharedPreferences;
 
 @end

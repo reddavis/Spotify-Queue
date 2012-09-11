@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface SQPlayCommand : NSScriptCommand
 
 @end

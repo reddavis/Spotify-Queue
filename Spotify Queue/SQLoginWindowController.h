@@ -8,6 +8,17 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface SQLoginWindowController : NSWindowController
+
+extern NSString *const kSQLoginWindowControllerXibName;
+
+
+@interface SQLoginWindowController : NSWindowController <SPSessionDelegate>
+
+@property (weak, nonatomic) IBOutlet NSTextField *usernameTextField;
+@property (weak, nonatomic) IBOutlet NSTextField *passwordTextField;
+@property (weak, nonatomic) IBOutlet NSButton *loginButton;
+@property (weak, nonatomic) IBOutlet NSProgressIndicator *largeSpinner;
+
+- (IBAction)loginButtonClicked:(id)sender;
 
 @end

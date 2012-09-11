@@ -7,6 +7,7 @@
 //
 
 #import "SQAddTrackCommand.h"
+#import "SQPlaybackManager.h"
 
 
 @implementation SQAddTrackCommand
@@ -14,7 +15,9 @@
 - (id)performDefaultImplementation {
     
     NSDictionary *arguments = [self evaluatedArguments];
-    NSLog(@"%@", arguments);
+    
+    NSURL *URL = [NSURL URLWithString:[arguments objectForKey:@""]];
+    [[SQPlaybackManager sharedPlaybackManager] addTrackWithURL:URL];
     
     return nil;
 }

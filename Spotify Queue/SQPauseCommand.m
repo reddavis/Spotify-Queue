@@ -7,7 +7,15 @@
 //
 
 #import "SQPauseCommand.h"
+#import "SQPlaybackManager.h"
+
 
 @implementation SQPauseCommand
+
+- (id)performDefaultImplementation {
+    
+    [[SQPlaybackManager sharedPlaybackManager] pause];
+    return nil;
+}
 
 @end

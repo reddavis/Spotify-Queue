@@ -8,6 +8,4 @@
 
 #import "SQConstants.h"
 
-@implementation SQConstants
-
-@end
+NSString *const kLoggedInSuccessfulyNotification = @"com.spotifyQueue.loggedInSuccessfuly";

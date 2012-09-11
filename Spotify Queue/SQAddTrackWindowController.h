@@ -8,6 +8,16 @@
 
 #import <Cocoa/Cocoa.h>
 
+
+extern NSString *const kSQAddTrackWindowControllerXibName;
+
+
 @interface SQAddTrackWindowController : NSWindowController
+
+@property (weak, nonatomic) IBOutlet NSTextField *trackURLTextField;
+@property (weak ,nonatomic) IBOutlet NSButton *addTrackButton;
+
+- (IBAction)addTrackButtonClicked:(id)sender;
+- (IBAction)hidePanel:(id)sender;
 
 @end

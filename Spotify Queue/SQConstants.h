@@ -8,6 +8,5 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SQConstants : NSObject
 
-@end
+extern NSString *const kLoggedInSuccessfulyNotification;

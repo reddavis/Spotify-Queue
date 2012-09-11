@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A47B980615FFE7FC005C34B0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A47B980515FFE7FC005C34B0 /* README.md */; };
+		A4C542BB15FDCA2D00E0DC9A /* SQPlayCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C542BA15FDCA2D00E0DC9A /* SQPlayCommand.m */; };
+		A4C542BE15FDCA7200E0DC9A /* SQPauseCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C542BD15FDCA7200E0DC9A /* SQPauseCommand.m */; };
+		A4CD82D015FB94E300A74EEE /* appkey.c in Sources */ = {isa = PBXBuildFile; fileRef = A4CD82CF15FB94E300A74EEE /* appkey.c */; };
+		A4CD82D315FB95F700A74EEE /* CocoaLibSpotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CD82CC15FB949500A74EEE /* CocoaLibSpotify.framework */; };
+		A4CD82D515FB960200A74EEE /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CD82D415FB960200A74EEE /* Carbon.framework */; };
+		A4CD82D715FB960B00A74EEE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CD82D615FB960B00A74EEE /* QuartzCore.framework */; };
+		A4CD82D915FB961300A74EEE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CD82D815FB961300A74EEE /* AudioToolbox.framework */; };
+		A4CD82DB15FB962B00A74EEE /* CocoaLibSpotify.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A4CD82CC15FB949500A74EEE /* CocoaLibSpotify.framework */; };
+		A4CD82E015FBB21C00A74EEE /* SQPlaybackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD82DF15FBB21C00A74EEE /* SQPlaybackManager.m */; };
+		A4CD82EA15FCBBDE00A74EEE /* SQAddTrackWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD82E815FCBBDE00A74EEE /* SQAddTrackWindowController.m */; };
+		A4CD82EB15FCBBDE00A74EEE /* SQAddTrackWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4CD82E915FCBBDE00A74EEE /* SQAddTrackWindowController.xib */; };
+		A4CD82F015FCEB9100A74EEE /* SQLoginWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD82EE15FCEB9100A74EEE /* SQLoginWindowController.m */; };
+		A4CD82F115FCEB9100A74EEE /* SQLoginWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4CD82EF15FCEB9100A74EEE /* SQLoginWindowController.xib */; };
+		A4CD82F515FCEE5D00A74EEE /* SQUserPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD82F415FCEE5D00A74EEE /* SQUserPreferences.m */; };
+		A4CD82F815FCEF2900A74EEE /* SQConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CD82F715FCEF2900A74EEE /* SQConstants.m */; };
+		A4E0879915FA0DB500C7583F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E0879815FA0DB400C7583F /* Cocoa.framework */; };
+		A4E087A315FA0DB500C7583F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4E087A115FA0DB500C7583F /* InfoPlist.strings */; };
+		A4E087A515FA0DB500C7583F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E087A415FA0DB500C7583F /* main.m */; };
+		A4E087A915FA0DB500C7583F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A4E087A715FA0DB500C7583F /* Credits.rtf */; };
+		A4E087AC15FA0DB500C7583F /* SQAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E087AB15FA0DB500C7583F /* SQAppDelegate.m */; };
+		A4E087AF15FA0DB500C7583F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4E087AD15FA0DB500C7583F /* MainMenu.xib */; };
+		A4E087BC15FA0EB300C7583F /* SQWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4E087BA15FA0EB300C7583F /* SQWindowController.xib */; };
+		A4E087BE15FA11E600C7583F /* SpotifyQueue.sdef in Resources */ = {isa = PBXBuildFile; fileRef = A4E087BD15FA11E600C7583F /* SpotifyQueue.sdef */; };
+		A4E087C215FA180F00C7583F /* SQAddTrackCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E087C115FA180F00C7583F /* SQAddTrackCommand.m */; };
+		A4E087CB15FA2CEC00C7583F /* SQDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E087CA15FA2CEC00C7583F /* SQDataStore.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4CD82CB15FB949500A74EEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4CD82C215FB949500A74EEE /* CocoaLibSpotify Mac Framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 503D630F13258041007772CA;
+			remoteInfo = CocoaLibSpotify;
+		};
+		A4CD82CD15FB949500A74EEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4CD82C215FB949500A74EEE /* CocoaLibSpotify Mac Framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 504E4934155AA85400E1C0F7;
+			remoteInfo = CocoaLSTests;
+		};
+		A4CD82D115FB95F400A74EEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4CD82C215FB949500A74EEE /* CocoaLibSpotify Mac Framework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 503D630E13258041007772CA;
+			remoteInfo = CocoaLibSpotify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A4CD82DA15FB961E00A74EEE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A4CD82DB15FB962B00A74EEE /* CocoaLibSpotify.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A47B980515FFE7FC005C34B0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		A4C542B915FDCA2D00E0DC9A /* SQPlayCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQPlayCommand.h; sourceTree = "<group>"; };
+		A4C542BA15FDCA2D00E0DC9A /* SQPlayCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQPlayCommand.m; sourceTree = "<group>"; };
+		A4C542BC15FDCA7200E0DC9A /* SQPauseCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQPauseCommand.h; sourceTree = "<group>"; };
+		A4C542BD15FDCA7200E0DC9A /* SQPauseCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQPauseCommand.m; sourceTree = "<group>"; };
+		A4CD82C215FB949500A74EEE /* CocoaLibSpotify Mac Framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CocoaLibSpotify Mac Framework.xcodeproj"; path = "Cocoa Spotify/Mac Framework/CocoaLibSpotify Mac Framework.xcodeproj"; sourceTree = "<group>"; };
+		A4CD82CF15FB94E300A74EEE /* appkey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = appkey.c; sourceTree = "<group>"; };
+		A4CD82D415FB960200A74EEE /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		A4CD82D615FB960B00A74EEE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A4CD82D815FB961300A74EEE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A4CD82DE15FBB21C00A74EEE /* SQPlaybackManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQPlaybackManager.h; sourceTree = "<group>"; };
+		A4CD82DF15FBB21C00A74EEE /* SQPlaybackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQPlaybackManager.m; sourceTree = "<group>"; };
+		A4CD82E715FCBBDE00A74EEE /* SQAddTrackWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQAddTrackWindowController.h; sourceTree = "<group>"; };
+		A4CD82E815FCBBDE00A74EEE /* SQAddTrackWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQAddTrackWindowController.m; sourceTree = "<group>"; };
+		A4CD82E915FCBBDE00A74EEE /* SQAddTrackWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQAddTrackWindowController.xib; sourceTree = "<group>"; };
+		A4CD82ED15FCEB9100A74EEE /* SQLoginWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLoginWindowController.h; sourceTree = "<group>"; };
+		A4CD82EE15FCEB9100A74EEE /* SQLoginWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLoginWindowController.m; sourceTree = "<group>"; };
+		A4CD82EF15FCEB9100A74EEE /* SQLoginWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQLoginWindowController.xib; sourceTree = "<group>"; };
+		A4CD82F315FCEE5D00A74EEE /* SQUserPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQUserPreferences.h; sourceTree = "<group>"; };
+		A4CD82F415FCEE5D00A74EEE /* SQUserPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQUserPreferences.m; sourceTree = "<group>"; };
+		A4CD82F615FCEF2900A74EEE /* SQConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQConstants.h; sourceTree = "<group>"; };
+		A4CD82F715FCEF2900A74EEE /* SQConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQConstants.m; sourceTree = "<group>"; };
+		A4E0879415FA0DB400C7583F /* Spotify Queue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spotify Queue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4E0879815FA0DB400C7583F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A4E0879B15FA0DB500C7583F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A4E0879C15FA0DB500C7583F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A4E0879D15FA0DB500C7583F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A4E087A015FA0DB500C7583F /* Spotify Queue-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Spotify Queue-Info.plist"; sourceTree = "<group>"; };
+		A4E087A215FA0DB500C7583F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4E087A415FA0DB500C7583F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A4E087A615FA0DB500C7583F /* Spotify Queue-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Spotify Queue-Prefix.pch"; sourceTree = "<group>"; };
+		A4E087A815FA0DB500C7583F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		A4E087AA15FA0DB500C7583F /* SQAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQAppDelegate.h; sourceTree = "<group>"; };
+		A4E087AB15FA0DB500C7583F /* SQAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQAppDelegate.m; sourceTree = "<group>"; };
+		A4E087AE15FA0DB500C7583F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A4E087BA15FA0EB300C7583F /* SQWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQWindowController.xib; sourceTree = "<group>"; };
+		A4E087BD15FA11E600C7583F /* SpotifyQueue.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SpotifyQueue.sdef; sourceTree = "<group>"; };
+		A4E087C015FA180F00C7583F /* SQAddTrackCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQAddTrackCommand.h; sourceTree = "<group>"; };
+		A4E087C115FA180F00C7583F /* SQAddTrackCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQAddTrackCommand.m; sourceTree = "<group>"; };
+		A4E087C915FA2CEC00C7583F /* SQDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQDataStore.h; sourceTree = "<group>"; };
+		A4E087CA15FA2CEC00C7583F /* SQDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQDataStore.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4E0879115FA0DB400C7583F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4CD82D915FB961300A74EEE /* AudioToolbox.framework in Frameworks */,
+				A4CD82D715FB960B00A74EEE /* QuartzCore.framework in Frameworks */,
+				A4CD82D515FB960200A74EEE /* Carbon.framework in Frameworks */,
+				A4CD82D315FB95F700A74EEE /* CocoaLibSpotify.framework in Frameworks */,
+				A4E0879915FA0DB500C7583F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4C542B615FDC9FA00E0DC9A /* Apple Script Commands */ = {
+			isa = PBXGroup;
+			children = (
+				A4C542B815FDCA1500E0DC9A /* Play */,
+				A4C542B715FDCA0B00E0DC9A /* Pause */,
+				A4CD82DD15FBAB7200A74EEE /* Add Track */,
+			);
+			name = "Apple Script Commands";
+			sourceTree = "<group>";
+		};
+		A4C542B715FDCA0B00E0DC9A /* Pause */ = {
+			isa = PBXGroup;
+			children = (
+				A4C542BC15FDCA7200E0DC9A /* SQPauseCommand.h */,
+				A4C542BD15FDCA7200E0DC9A /* SQPauseCommand.m */,
+			);
+			name = Pause;
+			sourceTree = "<group>";
+		};
+		A4C542B815FDCA1500E0DC9A /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				A4C542B915FDCA2D00E0DC9A /* SQPlayCommand.h */,
+				A4C542BA15FDCA2D00E0DC9A /* SQPlayCommand.m */,
+			);
+			name = Play;
+			sourceTree = "<group>";
+		};
+		A4CD82C315FB949500A74EEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4CD82CC15FB949500A74EEE /* CocoaLibSpotify.framework */,
+				A4CD82CE15FB949500A74EEE /* CocoaLibSpotify Test Container.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4CD82DC15FBAB6800A74EEE /* Playback Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A4CD82DE15FBB21C00A74EEE /* SQPlaybackManager.h */,
+				A4CD82DF15FBB21C00A74EEE /* SQPlaybackManager.m */,
+			);
+			name = "Playback Manager";
+			sourceTree = "<group>";
+		};
+		A4CD82DD15FBAB7200A74EEE /* Add Track */ = {
+			isa = PBXGroup;
+			children = (
+				A4E087C015FA180F00C7583F /* SQAddTrackCommand.h */,
+				A4E087C115FA180F00C7583F /* SQAddTrackCommand.m */,
+			);
+			name = "Add Track";
+			sourceTree = "<group>";
+		};
+		A4CD82E615FCBBB500A74EEE /* Add Track Window */ = {
+			isa = PBXGroup;
+			children = (
+				A4CD82E715FCBBDE00A74EEE /* SQAddTrackWindowController.h */,
+				A4CD82E815FCBBDE00A74EEE /* SQAddTrackWindowController.m */,
+			);
+			name = "Add Track Window";
+			sourceTree = "<group>";
+		};
+		A4CD82EC15FCEB6F00A74EEE /* Login Window */ = {
+			isa = PBXGroup;
+			children = (
+				A4CD82ED15FCEB9100A74EEE /* SQLoginWindowController.h */,
+				A4CD82EE15FCEB9100A74EEE /* SQLoginWindowController.m */,
+				A4CD82EF15FCEB9100A74EEE /* SQLoginWindowController.xib */,
+			);
+			name = "Login Window";
+			sourceTree = "<group>";
+		};
+		A4CD82F215FCEE3F00A74EEE /* User Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				A4CD82F315FCEE5D00A74EEE /* SQUserPreferences.h */,
+				A4CD82F415FCEE5D00A74EEE /* SQUserPreferences.m */,
+			);
+			name = "User Preferences";
+			sourceTree = "<group>";
+		};
+		A4E0878915FA0DB400C7583F = {
+			isa = PBXGroup;
+			children = (
+				A4CD82C215FB949500A74EEE /* CocoaLibSpotify Mac Framework.xcodeproj */,
+				A4E0879E15FA0DB500C7583F /* Spotify Queue */,
+				A4E0879715FA0DB400C7583F /* Frameworks */,
+				A4E0879515FA0DB400C7583F /* Products */,
+				A47B980515FFE7FC005C34B0 /* README.md */,
+			);
+			sourceTree = "<group>";
+		};
+		A4E0879515FA0DB400C7583F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4E0879415FA0DB400C7583F /* Spotify Queue.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4E0879715FA0DB400C7583F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4CD82D815FB961300A74EEE /* AudioToolbox.framework */,
+				A4CD82D615FB960B00A74EEE /* QuartzCore.framework */,
+				A4CD82D415FB960200A74EEE /* Carbon.framework */,
+				A4E0879815FA0DB400C7583F /* Cocoa.framework */,
+				A4E0879A15FA0DB500C7583F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4E0879A15FA0DB500C7583F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4E0879B15FA0DB500C7583F /* AppKit.framework */,
+				A4E0879C15FA0DB500C7583F /* CoreData.framework */,
+				A4E0879D15FA0DB500C7583F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		A4E0879E15FA0DB500C7583F /* Spotify Queue */ = {
+			isa = PBXGroup;
+			children = (
+				A4E087AA15FA0DB500C7583F /* SQAppDelegate.h */,
+				A4E087AB15FA0DB500C7583F /* SQAppDelegate.m */,
+				A4E087C915FA2CEC00C7583F /* SQDataStore.h */,
+				A4E087CA15FA2CEC00C7583F /* SQDataStore.m */,
+				A4CD82F615FCEF2900A74EEE /* SQConstants.h */,
+				A4CD82F715FCEF2900A74EEE /* SQConstants.m */,
+				A4E087CC15FA2E8500C7583F /* Model */,
+				A4E087B515FA0E4E00C7583F /* Window Controllers */,
+				A4E087B715FA0E6000C7583F /* View Controllers */,
+				A4E087B615FA0E5600C7583F /* Xibs */,
+				A4E087BF15FA17E900C7583F /* Utility */,
+				A4E0879F15FA0DB500C7583F /* Supporting Files */,
+			);
+			path = "Spotify Queue";
+			sourceTree = "<group>";
+		};
+		A4E0879F15FA0DB500C7583F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4CD82CF15FB94E300A74EEE /* appkey.c */,
+				A4E087A015FA0DB500C7583F /* Spotify Queue-Info.plist */,
+				A4E087A115FA0DB500C7583F /* InfoPlist.strings */,
+				A4E087A415FA0DB500C7583F /* main.m */,
+				A4E087A615FA0DB500C7583F /* Spotify Queue-Prefix.pch */,
+				A4E087A715FA0DB500C7583F /* Credits.rtf */,
+				A4E087BD15FA11E600C7583F /* SpotifyQueue.sdef */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4E087B515FA0E4E00C7583F /* Window Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A4CD82EC15FCEB6F00A74EEE /* Login Window */,
+				A4CD82E615FCBBB500A74EEE /* Add Track Window */,
+			);
+			name = "Window Controllers";
+			sourceTree = "<group>";
+		};
+		A4E087B615FA0E5600C7583F /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				A4CD82E915FCBBDE00A74EEE /* SQAddTrackWindowController.xib */,
+				A4E087BA15FA0EB300C7583F /* SQWindowController.xib */,
+				A4E087AD15FA0DB500C7583F /* MainMenu.xib */,
+			);
+			name = Xibs;
+			sourceTree = "<group>";
+		};
+		A4E087B715FA0E6000C7583F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A4E087BF15FA17E900C7583F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A4C542B615FDC9FA00E0DC9A /* Apple Script Commands */,
+				A4CD82F215FCEE3F00A74EEE /* User Preferences */,
+				A4CD82DC15FBAB6800A74EEE /* Playback Manager */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		A4E087CC15FA2E8500C7583F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4E0879315FA0DB400C7583F /* Spotify Queue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4E087B215FA0DB500C7583F /* Build configuration list for PBXNativeTarget "Spotify Queue" */;
+			buildPhases = (
+				A4E0879015FA0DB400C7583F /* Sources */,
+				A4E0879115FA0DB400C7583F /* Frameworks */,
+				A4E0879215FA0DB400C7583F /* Resources */,
+				A4CD82DA15FB961E00A74EEE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4CD82D215FB95F400A74EEE /* PBXTargetDependency */,
+			);
+			name = "Spotify Queue";
+			productName = "Spotify Queue";
+			productReference = A4E0879415FA0DB400C7583F /* Spotify Queue.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4E0878B15FA0DB400C7583F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SQ;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = Reddavis;
+			};
+			buildConfigurationList = A4E0878E15FA0DB400C7583F /* Build configuration list for PBXProject "Spotify Queue" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A4E0878915FA0DB400C7583F;
+			productRefGroup = A4E0879515FA0DB400C7583F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A4CD82C315FB949500A74EEE /* Products */;
+					ProjectRef = A4CD82C215FB949500A74EEE /* CocoaLibSpotify Mac Framework.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				A4E0879315FA0DB400C7583F /* Spotify Queue */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A4CD82CC15FB949500A74EEE /* CocoaLibSpotify.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaLibSpotify.framework;
+			remoteRef = A4CD82CB15FB949500A74EEE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A4CD82CE15FB949500A74EEE /* CocoaLibSpotify Test Container.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			name = "CocoaLibSpotify Test Container.app";
+			path = CocoaLSTests.app;
+			remoteRef = A4CD82CD15FB949500A74EEE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4E0879215FA0DB400C7583F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4E087A315FA0DB500C7583F /* InfoPlist.strings in Resources */,
+				A4E087A915FA0DB500C7583F /* Credits.rtf in Resources */,
+				A4E087AF15FA0DB500C7583F /* MainMenu.xib in Resources */,
+				A4E087BC15FA0EB300C7583F /* SQWindowController.xib in Resources */,
+				A4E087BE15FA11E600C7583F /* SpotifyQueue.sdef in Resources */,
+				A4CD82EB15FCBBDE00A74EEE /* SQAddTrackWindowController.xib in Resources */,
+				A4CD82F115FCEB9100A74EEE /* SQLoginWindowController.xib in Resources */,
+				A47B980615FFE7FC005C34B0 /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4E0879015FA0DB400C7583F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4E087A515FA0DB500C7583F /* main.m in Sources */,
+				A4E087AC15FA0DB500C7583F /* SQAppDelegate.m in Sources */,
+				A4E087C215FA180F00C7583F /* SQAddTrackCommand.m in Sources */,
+				A4E087CB15FA2CEC00C7583F /* SQDataStore.m in Sources */,
+				A4CD82D015FB94E300A74EEE /* appkey.c in Sources */,
+				A4CD82E015FBB21C00A74EEE /* SQPlaybackManager.m in Sources */,
+				A4CD82EA15FCBBDE00A74EEE /* SQAddTrackWindowController.m in Sources */,
+				A4CD82F015FCEB9100A74EEE /* SQLoginWindowController.m in Sources */,
+				A4CD82F515FCEE5D00A74EEE /* SQUserPreferences.m in Sources */,
+				A4CD82F815FCEF2900A74EEE /* SQConstants.m in Sources */,
+				A4C542BB15FDCA2D00E0DC9A /* SQPlayCommand.m in Sources */,
+				A4C542BE15FDCA7200E0DC9A /* SQPauseCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4CD82D215FB95F400A74EEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLibSpotify;
+			targetProxy = A4CD82D115FB95F400A74EEE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4E087A115FA0DB500C7583F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4E087A215FA0DB500C7583F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A4E087A715FA0DB500C7583F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4E087A815FA0DB500C7583F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		A4E087AD15FA0DB500C7583F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4E087AE15FA0DB500C7583F /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4E087B015FA0DB500C7583F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A4E087B115FA0DB500C7583F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A4E087B315FA0DB500C7583F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$CONFIGURATION_BUILD_DIR/CocoaLibSpotify.framework/Versions/Frameworks\"/**";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Spotify Queue/Spotify Queue-Prefix.pch";
+				INFOPLIST_FILE = "Spotify Queue/Spotify Queue-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${BUILT_PRODUCTS_DIR}\"/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A4E087B415FA0DB500C7583F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$CONFIGURATION_BUILD_DIR/CocoaLibSpotify.framework/Versions/Frameworks\"/**";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Spotify Queue/Spotify Queue-Prefix.pch";
+				INFOPLIST_FILE = "Spotify Queue/Spotify Queue-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${BUILT_PRODUCTS_DIR}\"/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4E0878E15FA0DB400C7583F /* Build configuration list for PBXProject "Spotify Queue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4E087B015FA0DB500C7583F /* Debug */,
+				A4E087B115FA0DB500C7583F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4E087B215FA0DB500C7583F /* Build configuration list for PBXNativeTarget "Spotify Queue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4E087B315FA0DB500C7583F /* Debug */,
+				A4E087B415FA0DB500C7583F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4E0878B15FA0DB400C7583F /* Project object */;
+}
