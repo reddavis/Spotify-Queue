@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+
+<dictionary title="SpotifyQueue">
+    
+    <suite name="SpotifyQueue Suite" code="????" description="Common classes and commands for all applications.">
+        
+        <command name="addTrack" code="runPPrst" description="Add a track">
+            <cocoa class="SQAddTrackCommand"/>
+            <direct-parameter type="text"/>
+        </command>
+    
+    </suite>
+</dictionary>
