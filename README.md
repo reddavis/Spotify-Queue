@@ -20,11 +20,19 @@ end tell
 
 ### Play
 
-<script src="https://gist.github.com/3702516.js?file=gistfile1.applescript"></script>
+```applescript
+tell application "Spotify Queue"
+  play
+end tell
+```
 
 ### Pause
 
-<script src="https://gist.github.com/3702526.js?file=gistfile1.applescript"></script>
+```applescript
+tell application "Spotify Queue"
+  pause
+end tell
+```
 
 ### Note
 
